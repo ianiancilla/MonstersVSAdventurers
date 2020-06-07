@@ -14,22 +14,31 @@ public class DamageDealer : MonoBehaviour
         // checks if damage should/can be dealt, and does so.
         if (collider.GetComponent<Attacker>())
         {
-            try
-            {
-                collider.GetComponent<Health>().TakeDamage(damage);
-
-            }
-            catch
-            {
-                Debug.Log(collider + ": Object has no Health script assigned to it, cannt deal damage to it.");
-            }
+            DealDamage(collider);            
+            Impact();
         }
-
-        // destroys itself on collision, playing impact sound
-        Impact();
 
     }
 
+    /// <summary>
+    /// if collider has Health script, invokes its TakeDamage method
+    /// </summary>
+    private void DealDamage(GameObject collider)
+    {
+        try
+        {
+            collider.GetComponent<Health>().TakeDamage(damage);
+
+        }
+        catch
+        {
+            Debug.Log(collider + ": Object has no Health script assigned to it, cannt deal damage to it.");
+        }
+    }
+
+    /// <summary>
+    /// destroys itself on collision, playing impact sound
+    /// </summary>
     private void Impact()
     {
         try

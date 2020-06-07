@@ -12,9 +12,15 @@ public class Health : MonoBehaviour
     [Header("SFX")]
     [SerializeField] AudioClip deathSFX;
 
+    // cache
+    Animator animator;
+
     private void Start()
     {
         currentHealth = maxHealth;
+
+        // cache
+        animator = gameObject.GetComponent<Animator>();
     }
 
     public void TakeDamage(int damage)
@@ -22,13 +28,21 @@ public class Health : MonoBehaviour
         currentHealth -= damage;
         if (currentHealth <= 0)
         {
-            Die();
+            if (animator)
+            {
+                animator.SetBool("isDying", true);
+            }
+            else
+            {
+                Die(0);
+            }
         }
     }
 
-    private void Die()
+    public void Die(float delay)
     {
         AudioSource.PlayClipAtPoint(deathSFX, transform.position);
-        Destroy(gameObject);
+        Destroy(gameObject, delay);
     }
+
 }
