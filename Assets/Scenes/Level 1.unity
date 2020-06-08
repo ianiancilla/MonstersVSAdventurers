@@ -1317,6 +1317,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySpawner (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6973078758188107662, guid: ff2af9490bbbc3443af12afb89fe3107,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff2af9490bbbc3443af12afb89fe3107, type: 3}
 --- !u!4 &531022057 stripped
@@ -1396,6 +1401,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EnemySpawner (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973078758188107662, guid: ff2af9490bbbc3443af12afb89fe3107,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff2af9490bbbc3443af12afb89fe3107, type: 3}
@@ -1660,6 +1670,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EnemySpawner (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973078758188107662, guid: ff2af9490bbbc3443af12afb89fe3107,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff2af9490bbbc3443af12afb89fe3107, type: 3}
