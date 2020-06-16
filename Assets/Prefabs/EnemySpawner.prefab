@@ -45,5 +45,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnIntervalMin: 1
   spawnIntervalMax: 5
-  attackerPrefab: {fileID: 4502303261343442501, guid: bdd52e8d081d23c4e8be9347f716bce3,
-    type: 3}
+  attackerPrefab: {fileID: 589561322, guid: 5b47f0fff27ffb449ade5a7308f4dfb0, type: 3}
