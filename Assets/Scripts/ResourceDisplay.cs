@@ -35,4 +35,6 @@ public class ResourceDisplay : MonoBehaviour
         }
         UpdateDisplay();
     }
+
+    public int GetResourceCount() { return resourceCount; }
 }

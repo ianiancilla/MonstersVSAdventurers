@@ -6,6 +6,14 @@ public class DefenderSpawner: MonoBehaviour
 {
     public Defender SelectedDefender { get; set; }
 
+    // cache
+    ResourceDisplay resources;
+
+    private void Start()
+    {
+        resources = FindObjectOfType<ResourceDisplay>();
+    }
+
     private void OnMouseDown()
     {
         SpawnDefender(GetSquareCentre());
@@ -13,7 +21,13 @@ public class DefenderSpawner: MonoBehaviour
 
     private void SpawnDefender(Vector2 spawnPos)
     {
-        Defender newDefender = Instantiate(SelectedDefender, spawnPos, Quaternion.identity) as Defender;
+        var cost = SelectedDefender.GetResourceCost();
+
+        if ( cost <= resources.GetResourceCount())
+        {
+            resources.SpendResources(cost);
+            Defender newDefender = Instantiate(SelectedDefender, spawnPos, Quaternion.identity) as Defender;
+        }
     }
 
     private Vector2 GetSquareCentre()

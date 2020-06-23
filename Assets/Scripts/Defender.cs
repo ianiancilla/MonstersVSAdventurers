@@ -4,5 +4,7 @@ using UnityEngine;
 
 public class Defender : MonoBehaviour
 {
-    [SerializeField] int starCost = 100;
+    [SerializeField] int resourceCost = 100;
+
+    public int GetResourceCost() { return resourceCost; }
 }

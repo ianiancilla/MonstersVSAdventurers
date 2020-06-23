@@ -9,7 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 233335324313845534}
+  - component: {fileID: 3858922693586820985}
   - component: {fileID: 78762154}
+  - component: {fileID: 904054259}
   m_Layer: 0
   m_Name: Def_Bear
   m_TagString: Untagged
@@ -32,6 +34,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &3858922693586820985
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233335324313845533}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 92d40e0944836854097f71851dc75fd7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &78762154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44,6 +65,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9619acc40e7fd9f4ba0cd27587c6f343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  starCost: 100
+--- !u!114 &904054259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233335324313845533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60af5898f3b9a1f45a06d92b9b154ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 3645534876191344379, guid: 35233589542418e4b9ac8bd3dacdcc1b,
+    type: 3}
+  projectile_origin: {fileID: 528382294266920393}
 --- !u!1 &7529429051421258805
 GameObject:
   m_ObjectHideFlags: 0
@@ -84,8 +121,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3149849086317109001}
   - component: {fileID: 5924519584397376664}
-  - component: {fileID: 3816351630652251539}
-  - component: {fileID: 130940429046472830}
   m_Layer: 9
   m_Name: Body
   m_TagString: Untagged
@@ -159,37 +194,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &3816351630652251539
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8681824613990797108}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 92d40e0944836854097f71851dc75fd7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &130940429046472830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8681824613990797108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60af5898f3b9a1f45a06d92b9b154ee8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectile: {fileID: 3645534876191344379, guid: 35233589542418e4b9ac8bd3dacdcc1b,
-    type: 3}
-  projectile_origin: {fileID: 528382294266920393}
