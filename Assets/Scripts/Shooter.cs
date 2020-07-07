@@ -7,10 +7,14 @@ public class Shooter : MonoBehaviour
     [SerializeField] GameObject projectile;
     [SerializeField] Transform projectile_origin;
 
+    Animator animator;
     AttackerSpawner myLaneSpawner;
 
     public void Start()
     {
+        // cache
+        animator = GetComponent<Animator>();
+
         SetLaneSpawner();
     }
 
@@ -18,11 +22,13 @@ public class Shooter : MonoBehaviour
     {
         if (isEnemyInLane())
         {
-            //TODO set animation state to shooting
+            // set animation state to shooting
+            animator.SetBool("isAttacking", true);
         }
         else
         {
-            //TODO set animation state to idle
+            // set animation state to idle
+            animator.SetBool("isAttacking", false);
         }
     }
 
@@ -49,6 +55,8 @@ public class Shooter : MonoBehaviour
 
     private bool isEnemyInLane()
     {
+        if (!myLaneSpawner) { return false; }
+
         if (myLaneSpawner.transform.childCount > 0)
         {
             return true;
