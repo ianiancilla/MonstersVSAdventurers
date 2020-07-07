@@ -31,6 +31,12 @@ public class Health : MonoBehaviour
             if (animator)
             {
                 animator.SetBool("isDying", true);
+
+                // to handle cases where there is an animator but not a death animation
+                if (!animator.GetBool("isDying"))
+                {
+                    Die(0);
+                }
             }
             else
             {
@@ -41,7 +47,10 @@ public class Health : MonoBehaviour
 
     public void Die(float delay)
     {
-        AudioSource.PlayClipAtPoint(deathSFX, transform.position);
+        if (deathSFX)
+        {
+            AudioSource.PlayClipAtPoint(deathSFX, transform.position);
+        }
         Destroy(gameObject, delay);
     }
 

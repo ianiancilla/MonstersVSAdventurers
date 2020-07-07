@@ -1634,7 +1634,7 @@ TextureImporter:
         width: 126
         height: 248
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1642,6 +1642,27 @@ TextureImporter:
       bones: []
       spriteID: 4b4f109ef378b6d80800000000000000
       internalID: -8256356783291763532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowland@128x129_1
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1668
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60b044d0604709890800000000000000
+      internalID: -7453329813956982010
       vertices: []
       indices: 
       edges: []
