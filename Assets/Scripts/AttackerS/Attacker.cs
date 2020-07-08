@@ -71,4 +71,6 @@ public class Attacker : MonoBehaviour
         currentSpeed = jumpSpeed;
         animator.SetTrigger("jumpTrigger");
     }
+
+    public int GetDamageDealt() { return damageDealt; }
 }
