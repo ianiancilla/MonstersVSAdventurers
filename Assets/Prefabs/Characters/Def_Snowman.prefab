@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 697527785}
   - component: {fileID: 47301511}
   - component: {fileID: 6260425011661733082}
+  - component: {fileID: 5319468307491215807}
   m_Layer: 9
   m_Name: Def_Snowman
   m_TagString: Untagged
@@ -211,3 +212,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 200
   deathSFX: {fileID: 0}
+--- !u!114 &5319468307491215807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2464692803142198624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 089ce26b55dc0cf4db89421be4758dab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

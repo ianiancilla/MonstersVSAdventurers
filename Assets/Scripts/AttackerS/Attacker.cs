@@ -5,6 +5,8 @@ using UnityEngine;
 public class Attacker : MonoBehaviour
 {
     [Range (0, 5)][SerializeField] float walkSpeed = 1f;
+    [Range(0, 5)] [SerializeField] float jumpSpeed = 3f;
+
     [SerializeField] int damageDealt = 50;
 
     float currentSpeed;
@@ -64,4 +66,9 @@ public class Attacker : MonoBehaviour
         }
     }
 
+    public void Jump()
+    {
+        currentSpeed = jumpSpeed;
+        animator.SetTrigger("jumpTrigger");
+    }
 }
