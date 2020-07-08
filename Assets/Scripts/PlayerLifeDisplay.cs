@@ -16,13 +16,14 @@ public class PlayerLifeDisplay : MonoBehaviour
         // cache
         lifeDisplay = GetComponent<TextMeshProUGUI>();
         scoring = FindObjectOfType<Scoring>();
-
         UpdateDisplay();
-
     }
 
     public void UpdateDisplay()
     {
-        lifeDisplay.text = scoring.CurrentHealth.ToString();
+        if (lifeDisplay)
+        {
+            lifeDisplay.text = scoring.CurrentHealth.ToString();
+        }
     }
 }

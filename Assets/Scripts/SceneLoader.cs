@@ -39,4 +39,14 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene("YouLose");
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void LoadLev1()
+    {
+        SceneManager.LoadScene("Level 1");
+    }
 }

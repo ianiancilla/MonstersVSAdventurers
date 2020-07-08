@@ -96,7 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cefedb39484c704895fb9f676cb0614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 0.78
+  walkSpeed: 0.64
+  jumpSpeed: 3
   damageDealt: 50
 --- !u!114 &589561321
 MonoBehaviour:

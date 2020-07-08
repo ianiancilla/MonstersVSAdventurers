@@ -203,6 +203,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1766450778137795387, guid: 9fd3b8411226dd844b23b129e87f3f05,
+        type: 3}
+      propertyPath: resourceCount
+      value: 600
+      objectReference: {fileID: 0}
     - target: {fileID: 1766450779070937927, guid: 9fd3b8411226dd844b23b129e87f3f05,
         type: 3}
       propertyPath: m_Name
@@ -542,7 +547,7 @@ PrefabInstance:
     - target: {fileID: 6958029883631338578, guid: 866c481ce2bf2b34bbc6b9aa06ab50c7,
         type: 3}
       propertyPath: startingHealth
-      value: 500
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 6958029883631338579, guid: 866c481ce2bf2b34bbc6b9aa06ab50c7,
         type: 3}
@@ -599,8 +604,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6958029883631338580, guid: 866c481ce2bf2b34bbc6b9aa06ab50c7, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 866c481ce2bf2b34bbc6b9aa06ab50c7, type: 3}
 --- !u!1001 &8012043689104617635
 PrefabInstance:
@@ -751,17 +755,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DefenderSpawner
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746772247505652789, guid: 771f5969c7fb58c4fbc30f4bf3d71e37,
-        type: 3}
-      propertyPath: defender
-      value: 
-      objectReference: {fileID: 78762154, guid: b8ff2dcd9f04cf4498ea2093a1f1409d,
-        type: 3}
-    - target: {fileID: 8746772247505652810, guid: 771f5969c7fb58c4fbc30f4bf3d71e37,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8746772247505652811, guid: 771f5969c7fb58c4fbc30f4bf3d71e37,
         type: 3}
