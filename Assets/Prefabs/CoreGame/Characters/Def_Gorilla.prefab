@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60af5898f3b9a1f45a06d92b9b154ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 3645534876191344379, guid: 35233589542418e4b9ac8bd3dacdcc1b,
+  projectile: {fileID: 3645534876191344379, guid: fdebf1131815bbc4e987453582e303d6,
     type: 3}
   projectile_origin: {fileID: 1399122117751770150}
 --- !u!114 &177871940

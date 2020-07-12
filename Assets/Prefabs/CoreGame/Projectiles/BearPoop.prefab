@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4198015767454832722}
   - component: {fileID: 374323994}
   m_Layer: 11
-  m_Name: Poop Projectile
+  m_Name: ApePoop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 3645534876191344379}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.95, y: 2.54, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32a659f37256c914da50cdf48dcda715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
+  damage: 150
   impactSFX: {fileID: 8300000, guid: 2b747a2d14b20d04f95587a23616c5c0, type: 3}
 --- !u!58 &374323994
 CircleCollider2D:
