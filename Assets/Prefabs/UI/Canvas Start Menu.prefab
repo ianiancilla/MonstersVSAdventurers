@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 240}
+  m_AnchoredPosition: {x: 0, y: 150}
   m_SizeDelta: {x: 513.1106, y: 204.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3649734200657742039
@@ -69,8 +69,8 @@ MonoBehaviour:
 
     Game'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 57d171db7ae5c91439af823de74f2f02, type: 2}
-  m_sharedMaterial: {fileID: -8078618064010694501, guid: 57d171db7ae5c91439af823de74f2f02,
+  m_fontAsset: {fileID: 11400000, guid: 0a64942656efb804297d52fe0378f589, type: 2}
+  m_sharedMaterial: {fileID: 6559538707748731728, guid: 0a64942656efb804297d52fe0378f589,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -96,8 +96,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 120
-  m_fontSizeBase: 120
+  m_fontSize: 70
+  m_fontSizeBase: 70
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -280,13 +280,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
-    m_FontSize: 51
-    m_FontStyle: 0
+    m_Font: {fileID: 12800000, guid: e50518ec2f959f64ab7ef34e51c7002e, type: 3}
+    m_FontSize: 53
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 146
-    m_Alignment: 1
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -294,7 +294,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Evil enemies are attacking your precious poop-animal den!\n\nSelect a
     defender from the bottom row, and click on a tile to place it.\nPlacing defenders
-    costs precious excrement points, which only turds can regenerate. \n\nThink well
+    costs precious excrement-points, which only turds can regenerate. \n\nThink well
     on who you place where."
 --- !u!1 &3649734201041403877
 GameObject:
@@ -357,7 +357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2, g: 0.38039216, b: 0.50980395, a: 0.8666667}
+  m_Color: {r: 0.2, g: 0.38039216, b: 0.50980395, a: 0.88235295}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -408,7 +408,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -262.0999, y: -5.9001465}
+  m_AnchoredPosition: {x: -262.09998, y: -5.9001465}
   m_SizeDelta: {x: -891.609, y: -363.76917}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3649734201312111590
@@ -432,7 +432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2, g: 0.38039216, b: 0.50980395, a: 0.8666667}
+  m_Color: {r: 0.2, g: 0.38039216, b: 0.50980395, a: 0.88235295}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -583,7 +583,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -110}
+  m_AnchoredPosition: {x: 0, y: -150}
   m_SizeDelta: {x: 513.1106, y: 204.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3649734201936570297
@@ -615,8 +615,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Options
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 57d171db7ae5c91439af823de74f2f02, type: 2}
-  m_sharedMaterial: {fileID: -8078618064010694501, guid: 57d171db7ae5c91439af823de74f2f02,
+  m_fontAsset: {fileID: 11400000, guid: 4e152a0d3d365a94eb1507398e3e3dd7, type: 2}
+  m_sharedMaterial: {fileID: 2346637973843160333, guid: 4e152a0d3d365a94eb1507398e3e3dd7,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -796,7 +796,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -400}
+  m_AnchoredPosition: {x: 0, y: -350}
   m_SizeDelta: {x: 513.1106, y: 204.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3649734202115061578
@@ -828,8 +828,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Quit
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 57d171db7ae5c91439af823de74f2f02, type: 2}
-  m_sharedMaterial: {fileID: -8078618064010694501, guid: 57d171db7ae5c91439af823de74f2f02,
+  m_fontAsset: {fileID: 11400000, guid: 4e152a0d3d365a94eb1507398e3e3dd7, type: 2}
+  m_sharedMaterial: {fileID: 2346637973843160333, guid: 4e152a0d3d365a94eb1507398e3e3dd7,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
