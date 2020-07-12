@@ -98,7 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 1.61
   jumpSpeed: 3
-  damageDealt: 30
+  damageDealt: 60
 --- !u!114 &9080938929312972585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e441c8e47a6b14b4898ad9898a6a5dfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 20
+  maxHealth: 100
   deathSFX: {fileID: 0}
 --- !u!114 &9154284017603044633
 MonoBehaviour:

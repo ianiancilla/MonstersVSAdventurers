@@ -1,7 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Schema;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DefenderButton : MonoBehaviour
 {
@@ -18,6 +21,14 @@ public class DefenderButton : MonoBehaviour
         private void Start()
     {
         defenderSpawner = FindObjectOfType<DefenderSpawner>();
+
+        LabelButtonsWithCost();
+    }
+
+    private void LabelButtonsWithCost()
+    {
+        TextMeshProUGUI costText = GetComponentInChildren<TextMeshProUGUI>();
+        costText.text = defenderPrefab.GetResourceCost().ToString();
     }
 
     private void OnMouseDown()

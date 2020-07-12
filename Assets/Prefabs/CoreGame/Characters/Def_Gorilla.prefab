@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9619acc40e7fd9f4ba0cd27587c6f343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceCost: 60
+  resourceCost: 50
 --- !u!114 &1399122117707821805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e441c8e47a6b14b4898ad9898a6a5dfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 200
   deathSFX: {fileID: 0}
 --- !u!1 &1399122117751770151
 GameObject:
