@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class LevelController : MonoBehaviour
 {
-    [SerializeField] GameObject levelCompleteWndow;
+    [SerializeField] GameObject levelCompleteWindow;
+    [SerializeField] GameObject defenderMenu;
 
     private bool spawnersStopped = false;
     public bool TimeUp { get; set; }
@@ -15,7 +16,7 @@ public class LevelController : MonoBehaviour
     {
         TimeUp = false;
 
-        levelCompleteWndow.SetActive(false);
+        levelCompleteWindow.SetActive(false);
     }
 
     // Update is called once per frame
@@ -27,9 +28,17 @@ public class LevelController : MonoBehaviour
 
             if (CountAttackers() <= 0)
             {
-                levelCompleteWndow.SetActive(true);
+                LevelComplete();
             }
         }
+    }
+
+    private void LevelComplete()
+    {
+        levelCompleteWindow.SetActive(true);
+        defenderMenu.SetActive(false);
+        FindObjectOfType<DefenderSpawner>().SelectedDefender = null;
+
     }
 
     private int CountAttackers()

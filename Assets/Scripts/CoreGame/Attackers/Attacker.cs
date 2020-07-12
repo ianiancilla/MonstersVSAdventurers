@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Attacker : MonoBehaviour
 {
+    [Header("Speed")]
     [Range (0, 5)][SerializeField] float walkSpeed = 1f;
     [Range(0, 5)] [SerializeField] float jumpSpeed = 3f;
 
-    [SerializeField] int damageDealt = 50;
+    [Header("Damage")]
+    [SerializeField] float damageDealt = 50; // modified by difficulty in actual use.
 
     float currentSpeed;
 
@@ -23,6 +25,9 @@ public class Attacker : MonoBehaviour
         animator = GetComponent<Animator>();
 
         currentSpeed = walkSpeed;
+
+        // set damage based on difficulty modifier
+        damageDealt *= PlayerPrefsController.GetDifficulty();
     }
 
     // Update is called once per frame
@@ -72,5 +77,5 @@ public class Attacker : MonoBehaviour
         animator.SetTrigger("jumpTrigger");
     }
 
-    public int GetDamageDealt() { return damageDealt; }
+    public float GetDamageDealt() { return damageDealt; }
 }

@@ -23,7 +23,8 @@ public class PlayerLifeDisplay : MonoBehaviour
     {
         if (lifeDisplay)
         {
-            lifeDisplay.text = scoring.CurrentHealth.ToString();
+            int health = (int)scoring.CurrentHealth;
+            lifeDisplay.text = health.ToString();
         }
     }
 }

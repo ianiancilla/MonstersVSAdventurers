@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DamageDealer : MonoBehaviour
 {
-    [SerializeField] int damage = 10;
+    [SerializeField] float damage = 10;
     [SerializeField] AudioClip impactSFX;
 
     private void OnTriggerEnter2D(Collider2D collision)

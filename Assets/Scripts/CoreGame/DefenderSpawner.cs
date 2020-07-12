@@ -21,13 +21,18 @@ public class DefenderSpawner: MonoBehaviour
 
     private void SpawnDefender(Vector2 spawnPos)
     {
-        var cost = SelectedDefender.GetResourceCost();
-
-        if ( cost <= resources.GetResourceCount())
+        
+        if (SelectedDefender)
         {
-            resources.SpendResources(cost);
-            Defender newDefender = Instantiate(SelectedDefender, spawnPos, Quaternion.identity) as Defender;
+            var cost = SelectedDefender.GetResourceCost();
+
+            if (cost <= resources.GetResourceCount())
+            {
+                resources.SpendResources(cost);
+                Defender newDefender = Instantiate(SelectedDefender, spawnPos, Quaternion.identity) as Defender;
+            }
         }
+
     }
 
     private Vector2 GetSquareCentre()

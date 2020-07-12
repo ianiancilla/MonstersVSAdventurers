@@ -5,8 +5,8 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [Header("Mechanics")]
-    [SerializeField] int maxHealth = 10;
-    int currentHealth;
+    [SerializeField] float maxHealth = 10;
+    float currentHealth;
 
 
     [Header("SFX")]
@@ -17,13 +17,18 @@ public class Health : MonoBehaviour
 
     private void Start()
     {
+        if (GetComponent<Attacker>())
+        {
+            // change enemy health based on difficulty
+            maxHealth *= PlayerPrefsController.GetDifficulty();
+        }
         currentHealth = maxHealth;
 
         // cache
         animator = gameObject.GetComponent<Animator>();
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         currentHealth -= damage;
         if (currentHealth <= 0)

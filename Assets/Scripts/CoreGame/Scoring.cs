@@ -6,7 +6,7 @@ public class Scoring : MonoBehaviour
 {
     [SerializeField] int startingHealth = 500;
 
-    public int CurrentHealth { get; set; }
+    public float CurrentHealth { get; set; }
 
     // cache
     PlayerLifeDisplay lifeDisplay;
@@ -23,7 +23,7 @@ public class Scoring : MonoBehaviour
 
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         if (damage < CurrentHealth)
         {
