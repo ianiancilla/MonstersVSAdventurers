@@ -19,11 +19,11 @@ public class SceneLoader : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().buildIndex == 0)
         {
-            StartCoroutine(WaitForTime(splashScreenTime));
+            StartCoroutine(WaitAndLoadNext(splashScreenTime));
         }
     }
 
-    IEnumerator WaitForTime(float timeToWait)
+    IEnumerator WaitAndLoadNext(float timeToWait)
     {
         yield return new WaitForSeconds(timeToWait);
         LoadNextScene();
@@ -48,5 +48,15 @@ public class SceneLoader : MonoBehaviour
     public void LoadLev1()
     {
         SceneManager.LoadScene("Level 1");
+    }
+
+    public void LoadOptions()
+    {
+        SceneManager.LoadScene("Options");
+    }
+
+    public void LoadStart()
+    {
+        SceneManager.LoadScene("Start Menu");
     }
 }
