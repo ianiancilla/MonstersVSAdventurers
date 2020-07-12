@@ -10,13 +10,15 @@ public class AttackerSpawner : MonoBehaviour
     [SerializeField] float spawnIntervalMax = 5f;
     [SerializeField] Attacker[] attackerPrefabs;
 
-    bool spawning = true;
+    public bool Spawning { get; set; }
 
 
     // Start is called before the first frame update
     IEnumerator Start()
     {
-        while (spawning)
+        Spawning = true;
+
+        while (Spawning)
         {
             yield return new WaitForSeconds(RandSpawnTime());
             SpawnAttacker();

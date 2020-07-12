@@ -20,6 +20,7 @@ public class EnemyGoal : MonoBehaviour
         if (attacker)
         {
             scoring.TakeDamage(attacker.GetDamageDealt());
+            Destroy(attacker, 3);
         }
     }
 }
