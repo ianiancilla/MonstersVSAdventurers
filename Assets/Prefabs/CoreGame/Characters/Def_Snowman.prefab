@@ -211,7 +211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 400
-  deathSFX: {fileID: 0}
+  deathSFX: {fileID: 8300000, guid: 4beddf27ad3a5d14295185df07be09e9, type: 3}
 --- !u!114 &5319468307491215807
 MonoBehaviour:
   m_ObjectHideFlags: 0

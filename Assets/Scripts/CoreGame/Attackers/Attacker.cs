@@ -38,7 +38,7 @@ public class Attacker : MonoBehaviour
 
     public void StopMoving()
     {
-        currentSpeed = 0;
+        currentSpeed = 0f;
     }
 
     public void ResumeMoving()

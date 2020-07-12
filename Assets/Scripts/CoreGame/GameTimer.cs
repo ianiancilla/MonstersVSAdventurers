@@ -8,6 +8,7 @@ public class GameTimer : MonoBehaviour
     [Tooltip("Level timer in seconds")]
     [SerializeField] float levelTime = 100f;
 
+    bool timeUpSent = false;
     // cache
     Slider slider;
 
@@ -20,12 +21,18 @@ public class GameTimer : MonoBehaviour
     void Update()
     {
         UpdateSlider();
+        TimeUpWarning();
+    }
 
-        bool timeUp = (Time.timeSinceLevelLoad >= levelTime);
-
-        if (timeUp)
+    private void TimeUpWarning()
+    {
+        if (!timeUpSent)
         {
-            FindObjectOfType<LevelController>().TimeUp = true;
+            if (Time.timeSinceLevelLoad >= levelTime)
+            {
+                FindObjectOfType<LevelController>().TimeUp = true;
+                timeUpSent = true;
+            }
         }
     }
 

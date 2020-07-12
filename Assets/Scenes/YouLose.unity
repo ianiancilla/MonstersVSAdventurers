@@ -525,10 +525,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas_Lose Screen
       objectReference: {fileID: 0}
-    - target: {fileID: 3075133065422890912, guid: 35e0bf79bf6ea7d439af4610ff3b4b44,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -262.10007
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35e0bf79bf6ea7d439af4610ff3b4b44, type: 3}

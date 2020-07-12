@@ -11,23 +11,33 @@ public class LevelController : MonoBehaviour
     private bool spawnersStopped = false;
     public bool TimeUp { get; set; }
 
+    AttackerSpawner[] spawners;
+
     // Start is called before the first frame update
     void Start()
     {
         TimeUp = false;
-
         levelCompleteWindow.SetActive(false);
+        spawners = FindObjectsOfType<AttackerSpawner>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        CheckLevelClear();
+    }
+
+    private void CheckLevelClear()
+    {
         if (TimeUp)
         {
             StopSpawners();
-
-            if (CountAttackers() <= 0)
+            if (CountAttackers() <= 0 && spawnersStopped)
             {
+                foreach (AttackerSpawner spawner in spawners)
+                {
+                    if (!spawner.DoneSpawning) { return; }
+                }
                 LevelComplete();
             }
         }
@@ -38,7 +48,6 @@ public class LevelController : MonoBehaviour
         levelCompleteWindow.SetActive(true);
         defenderMenu.SetActive(false);
         FindObjectOfType<DefenderSpawner>().SelectedDefender = null;
-
     }
 
     private int CountAttackers()
@@ -51,12 +60,9 @@ public class LevelController : MonoBehaviour
     {
         if (!spawnersStopped)
         {
-            AttackerSpawner[] spawners = FindObjectsOfType<AttackerSpawner>();
-
             foreach (AttackerSpawner spawner in spawners)
-            {
-                spawner.Spawning = false;
-            }
+            { spawner.Spawning = false; }
+
             spawnersStopped = true;
         }
     }

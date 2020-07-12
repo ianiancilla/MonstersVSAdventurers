@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4198015767454832722}
   - component: {fileID: 374323994}
   m_Layer: 11
-  m_Name: BearPoop
+  m_Name: ApePoop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 50
-  impactSFX: {fileID: 8300000, guid: 2b747a2d14b20d04f95587a23616c5c0, type: 3}
+  impactSFX: {fileID: 8300000, guid: 932f8a8f953bc704d8715aa12fd5e237, type: 3}
 --- !u!58 &374323994
 CircleCollider2D:
   m_ObjectHideFlags: 0

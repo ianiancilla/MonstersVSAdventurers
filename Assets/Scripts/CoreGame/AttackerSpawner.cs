@@ -11,6 +11,7 @@ public class AttackerSpawner : MonoBehaviour
     [SerializeField] Attacker[] attackerPrefabs;
 
     public bool Spawning { get; set; }
+    public bool DoneSpawning { get; set; }
 
 
     // Start is called before the first frame update
@@ -24,6 +25,7 @@ public class AttackerSpawner : MonoBehaviour
             SpawnAttacker();
         }
 
+        DoneSpawning = true;
     }
 
     private float RandSpawnTime()
