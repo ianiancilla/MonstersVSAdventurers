@@ -1004,6 +1004,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DefenderSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 8746772247505652789, guid: 771f5969c7fb58c4fbc30f4bf3d71e37,
+        type: 3}
+      propertyPath: placementSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 74fc3857c1a05eb479c6e8ae899bf84b, type: 3}
     - target: {fileID: 8746772247505652811, guid: 771f5969c7fb58c4fbc30f4bf3d71e37,
         type: 3}
       propertyPath: m_LocalPosition.x

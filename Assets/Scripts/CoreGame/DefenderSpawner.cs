@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DefenderSpawner: MonoBehaviour
 {
+    [SerializeField] AudioClip placementSound;
+
     public Defender SelectedDefender { get; set; }
 
     // cache
@@ -30,6 +32,7 @@ public class DefenderSpawner: MonoBehaviour
             {
                 resources.SpendResources(cost);
                 Defender newDefender = Instantiate(SelectedDefender, spawnPos, Quaternion.identity) as Defender;
+                AudioSource.PlayClipAtPoint(placementSound, transform.position);
             }
         }
 
